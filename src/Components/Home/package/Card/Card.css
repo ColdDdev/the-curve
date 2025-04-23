@@ -1,0 +1,92 @@
+.PackCardHold{
+    width: 90%;
+    max-height: 400px;
+    min-height: 400px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 20px 0px rgba(199,196,196,0.75);
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(199,196,196,0.75);
+    -moz-box-shadow: 0px 2px 20px 0px rgba(199,196,196,0.75);
+}
+
+.CardLogo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.PackCardTitle{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 20px;
+    word-spacing: .5px;
+}
+
+.PackLine{
+    width: 25%;
+    margin-top: 10px;
+    height: 2px;
+}
+
+.PackPara{
+    margin-top: 20px;
+    font-size: 14px;
+    word-spacing: .5px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 1070px){
+    .PackPara{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 942px){
+    .PackPara{
+        line-height: 18px;
+    }
+}
+@media screen and (max-width: 428px){
+    .PackPara{
+        font-size: 16px;
+        line-height: 20px;
+        word-spacing: 1px;
+        
+    }
+}
+@media screen and (max-width: 375px){
+    .PackPara{
+        /* font-size: 16px; */
+        line-height: 20px;
+        word-spacing: 1px;
+        
+    }
+}
+@media screen and (max-width: 360px){
+    .PackPara{
+        font-size: 15px;
+        line-height: 18px;
+        word-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .PackCardHold{
+        width: 80%;
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 320px){
+    .PackPara{
+        font-size: 14px;
+        line-height: 18px;
+        word-spacing: 1px;
+    }
+}

@@ -1,0 +1,331 @@
+.HeroContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative
+}
+
+.Hero1{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #FFB703; */
+    font-weight: 400;
+    color: black;
+}
+
+.Bottom{
+    width: 100%;
+    background-color: #FFFFFF;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: flex-end; */
+    /* padding-left: 100px; */
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 120px;
+}
+
+.BottomWrap{
+    width: 90%;
+    padding-right: 10px;
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+
+.HeroLeft{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    /* background-color: bisque; */
+}
+
+.HeroRight{
+    width: 5%;
+    height: 25%;
+    position: absolute;
+    right: 10%;
+    top: -10%;
+    /* background-color: red; */
+}
+
+
+.HeroText{
+    font-size: 60px;
+    font-weight: 700;
+    color: #FFB703;
+    line-height: 90px;
+    /* word-spacing: 10px; */
+    letter-spacing: 5px;
+    /* background-color: red; */
+    width: 70%;
+    /* position: relative; */
+}
+
+.HeroTextMobile{
+    display: none;
+}
+
+
+.free{
+    color: #FFB703;
+}
+
+.HeroPara{
+    font-size: 27px;
+    margin-top: 15px;
+    color: #34393C;
+    width: 65%;
+    line-height: 40px;
+    word-spacing: 5px;
+
+}
+
+.HeroButtonHolder{
+    width: 50%;
+    /* background-color: aquamarine; */
+    position: relative; 
+}
+.HeroTag{
+    width: 30%;
+    /* background-color: red; */
+}
+.HeroBtn2{
+    width: 50%;
+    height: 70px;
+    background-color: #FFB703;
+    /* font-weight: bold; */
+    font-size: 22px;
+    font-weight:500;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    color: #023047;
+    margin-bottom: 20px;
+    transform: scale(1);
+    transition: all 350ms;
+}
+.HeroBtn2:hover{
+    transform: scale(1.05);
+    transition: all 350ms;
+    color: white;
+    background-color: #023047;
+}
+
+.HeroLinkr{
+    width: 220px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.HeroImg{
+    width: 20%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    /* position: absolute; */
+    /* left: 30%; */
+    /* top: 80%; */
+    animation: point 1s infinite;
+    animation-delay: 5s;
+}
+.HeroImg img{
+    width: 100%;
+    transform: rotate(180deg);
+}
+@keyframes point {
+    0% { margin-left: 0px;  }
+    /* 25% { left: 31%; } */
+    50% { margin-left: 20px;}
+    /* 75% { left: 31%;} */
+    100% { margin-left: 0px}
+}
+
+@media screen and (max-width: 834px){
+    .BottomWrap{
+        width: 100%;
+        padding-left: 0px;
+        position: relative;
+        /* background-color: #34393C; */
+    }
+    .HeroLeft{
+        width: 100%;
+        /* background-color: #023047; */
+    }
+    .HeroPara{
+        width: 100%;
+    }
+    
+    .HeroImg{
+        animation: none;
+        width: 20%;
+        left: 0;
+        top: 85%;
+    }
+    .HeroText{
+        width: 90%;
+    }
+    .HeroButtonHolder{
+        width: 70%;
+    }
+    .HeroRight{
+        width: 5%;
+        height: 15%;
+        top: -5%;
+        /* background-color: red; */
+    }
+}
+
+@media screen and (max-width: 768px){
+    .BottomWrap{
+        padding-bottom: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px){
+    .Bottom{
+        justify-content: center;
+        /* padding-left: 20px; */
+    }
+   
+    .HeroLeft{
+        width: 90%;
+    }
+    .BottomWrap{
+        padding: 0px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    .HeroText{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 5px;
+        width: 90%;
+    }
+    .HeroBtn2{
+        width: 80%;
+    }
+    .HeroRight{
+        width: 5%;
+        height: 12%;
+        top: -5%;
+        /* background-color: red; */
+    }
+}
+
+@media screen and (max-width: 428px){
+    .Hero1{
+        font-size: 13px;
+    }
+    .BottomWrap{
+        width: 100%;
+        padding-left: 0px;
+        position: relative;
+        margin-top: 30px;
+        /* background-color: #34393C; */
+    }
+    .HeroLeft{
+        width: 100%;
+        /* background-color: #023047; */
+    }
+    .HeroRight{
+        width: 5%;
+        height: 15%;
+        top: -5%;
+        right: 2px;
+        /* background-color: red; */
+    }
+    
+    .HeroPara{
+        font-size: 16px;
+        margin-top: 15px;
+        color: #34393C;
+        width: 300px;
+        line-height: 20px;
+        word-spacing: 5px;
+    }
+    .HeroBtn{
+        width: 310px;
+    }
+    .HeroLinkr{
+        width: 310px;
+    }
+
+    .Bottom {
+        padding-top: 0px;
+        padding-left: 0px;
+        min-height: 80vh;
+    }
+    .HeroLeft a{
+        /* margin-left: -100px; */
+    }
+    
+    .HeroImg{
+        animation: none;
+        width: 30%;
+        left: 0;
+        top: 85%;
+    }
+    .HeroBtn2{
+        font-size: 18px;
+        padding-inline: 15px;
+    }
+
+    .HeroButtonHolder{
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width: 325px){
+    .HeroPara{
+        width: 280px;
+    }
+    /* .HeroBtn{
+        width: 270px;
+    } */
+    
+    .HeroLinkr{
+        width: 270px;
+    }
+    .Hero1{
+        font-size: 12px;
+    }
+    
+
+}
+@media screen and (width <= 320px){
+    .HeroBtn{
+        width: 100%;
+    }
+    
+
+}
+@media screen and (width <= 375px){
+    /* .Bottom button{
+        width: 100%;
+    } */
+
+}
+
+

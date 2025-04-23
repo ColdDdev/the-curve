@@ -1,0 +1,30 @@
+.App{
+  height: 200vh;
+}
+.mobileMenu{
+  width: 100%;
+  position: sticky;
+  height: 94px;
+  top: 0;
+  background: white;
+  background: linear-gradient(to right bottom,
+  rgba(255, 255, 255,0.7),
+  rgba(255, 255, 255, 0.3)
+      );
+  backdrop-filter: blur(1rem);
+}
+marquee{
+  background-color: #F5F0E1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  /* font-weight: 200; */
+  color: black;
+}
+
+.confirm-button-class{
+  background-color: #FFB703;
+  /* background-color: red; */
+  border-color: #FFB703;
+}

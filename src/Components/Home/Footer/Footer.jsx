@@ -59,7 +59,8 @@ function Footer() {
                     <Link to="/gallery">Gallery</Link>
                 </div>
                 <div className='FooterBtnContain'>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScPwDUHgF0FtouxZur-Y5s0G-j6sYW7nHsMQThBf4rHgvZJUg/viewform?usp=sharing" target='_blank' rel='noopener noreferrer'><button className='FooterBtn'>Apply Now!</button></a>
+                {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLScPwDUHgF0FtouxZur-Y5s0G-j6sYW7nHsMQThBf4rHgvZJUg/viewform?usp=sharing" target='_blank' rel='noopener noreferrer'><button className='FooterBtn'>Apply Now!</button></a> */}
+                <a href="https://forms.gle/EGzGeN7itCFdTDaM7" target='_blank' rel='noopener noreferrer'><button className='FooterBtn'>Join the Waitlist!</button></a>
                 </div>
             </div>
             <div className='FooterLine'></div>
